@@ -46,7 +46,7 @@ a {
     height: calc(100% - 74px);
     /* height: auto; */
     margin-top: 74px;
-    border: 2px solid cadetblue;
+    /* border: 2px solid cadetblue; */
 }
 
 .hidetab {

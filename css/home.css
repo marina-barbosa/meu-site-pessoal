@@ -39,7 +39,7 @@ h1, #dev {
 }
 
 button {
-    width: 200px;
+    width: 150px;
     height: 40px;
     border-radius: 7px;
     background: linear-gradient(to right, var(--roxo-light) 5%, var(--laranja) 95%);
