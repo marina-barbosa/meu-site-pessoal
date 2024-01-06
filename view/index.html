@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marina Barbosa</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/skills.css">
+    <link rel="stylesheet" href="../css/projetos.css">
+    <link rel="stylesheet" href="../css/exp.css">
+    <link rel="stylesheet" href="../css/contato.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- devicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <div>
+                <a><img id="logo" src="../assets/invader.png" alt=""></a>
+            </div>
+
+            <nav class="hideMobile" id="nav">
+                <a id="a-home" onclick="navHome()">Home</a>
+                <a id="a-skills" onclick="navSkills()">Skills</a>
+                <a id="a-projetos" onclick="navProjetos()">Projeto</a>
+                <a id="a-exp" onclick="navExp()">Exp</a>
+                <a id="a-contato" onclick="navContato()">Contato</a>
+            </nav>
+
+            <div id="toggles">
+                <div class="toggles-wrap hideMobile">
+                    <div id="tema"></div>
+                    <div id="idioma"></div>
+                </div>
+                <span id="burg"></span>
+            </div>
+
+        </header>
+
+        <!-- HOME -->
+        <div class="tab hidetab" id="home">
+            <div class="left">
+                <div class="textos">
+
+                    <h1>Marina Barbosa</h1>
+                    <h1 id="dev">>_ Desenvolvedora BackEnd && FullStack</h1>
+                    <section>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic deleniti temporibus quia illo
+                            eveniet excepturi accusamus omnis itaque earum doloribus qui numquam harum sunt, ea modi
+                            maiores
+                            quidem at error!
+                        </p>
+                        <p>
+                            Aliquam enim quo, fuga culpa error, ut quia dicta recusandae ducimus atque nihil tempora
+                            quod
+                            tenetur. Eligendi itaque eius asperiores facilis optio facere officiis modi unde, esse eos
+                            nulla
+                            officia!
+                        </p>
+                    </section>
+                    <button>Veja mais</button>
+                </div>
+            </div>
+
+            <div class="right">
+                <div>
+                    <img src="../assets/invader.png" alt="">
+                </div>
+                <div class="icons">
+                    <a href="https://github.com/marina-barbosa" target="_blank">
+                        <i class="fa-brands fa-square-github fa-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/marina-barbosa-exp/" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-2xl"></i>
+                    </a>
+                    <a href="https://wa.me/qr/BN36YTUIUJVMA1" alt="zap 13996697841" target="_blank">
+                        <i class="fa-brands fa-square-whatsapp fa-2xl"></i>
+                    </a>
+                    <a href="mailto:marinabarbosa.exp@gmail.com" target="_blank">
+                        <i class="fa-regular fa-envelope fa-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SKILLS -->
+        <div class="tab hidetab" id="skills">
+            <h3>I code with</h3>
+            <div class="linha">
+                <div>
+                    <i class="devicon-javascript-plain colored"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div>
+                    <i class="devicon-nodejs-plain colored"></i>
+                    <span>NodeJs</span>
+                </div>
+                <div>
+                    <i class="devicon-express-original colored"></i>
+                    <span>Express</span>
+                </div>
+                <div>
+                    <i class="devicon-postgresql-plain colored"></i>
+                    <span>Postgres</span>
+                </div>
+            </div>
+            <div class="linha">
+                <div>
+                    <i class="devicon-git-plain colored"></i>
+                    <span>Git</span>
+                </div>
+                <div>
+                    <i class="devicon-html5-plain colored"></i>
+                    <span>HTML</span>
+                </div>
+                <div>
+                    <i class="devicon-css3-plain colored"></i>
+                    <span>CSS</span>
+                </div>
+                <div>
+                    <i class="devicon-bootstrap-plain colored"></i>
+                    <span>Bootstrap</span>
+                </div>
+            </div>
+
+            <h3>Studying in this moment</h3>
+
+            <div class="linha">
+                <div>
+                    <i class="devicon-typescript-plain colored"></i>
+                    <span>TypeScript</span>
+                </div>
+                <div>
+                    <i class="devicon-angularjs-plain colored"></i>
+                    <span>Angular</span>
+                </div>
+                <div>
+                    <i class="devicon-csharp-plain-wordmark colored"></i>
+                    <span>C#</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PROJETOS -->
+        <div class="tab hidetab" id="projetos">
+            <div class="carrosel">
+
+            </div>
+        </div>
+
+        <!-- EXP -->
+        <div class="tab hidetab" id="exp">
+            <div class="container-exp">
+                <div class="linha-exp">
+                    <div class="card-exp">
+                        <div class="ano">2023</div>
+                        <i id="inicio" class="fa-solid fa-school-flag"></i>
+                        <div class="conteudo">
+                            <div class="titulo">
+                                Desenvolvimento de Software - Backend
+                            </div>
+                            <div class="subtitulo">
+                                Cubos Academy
+                            </div>
+                            <div class="desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sunt fugit. Magni
+                                consectetur eos qui veniam esse. Exercitationem amet rerum placeat sit ut saepe tenetur
+                                eaque reprehenderit, laborum ab dolor!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-exp">
+                        <div class="ano">2023</div>
+                        <i class="fa-solid fa-school-flag"></i>
+                        <div class="conteudo">
+                            <div class="titulo">
+                                Treinamento Sharp Coders - Fullstack
+                            </div>
+                            <div class="subtitulo">
+                                Ima Tech
+                            </div>
+                            <div class="desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sunt fugit. Magni
+                                consectetur eos qui veniam esse. Exercitationem amet rerum placeat sit ut saepe tenetur
+                                eaque reprehenderit, laborum ab dolor!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-exp">
+                        <div class="ano">2024</div>
+                        <i class="fa-solid fa-school-flag"></i>
+                        <div class="conteudo">
+                            <div class="titulo">
+                                Engenharia de Software
+                            </div>
+                            <div class="subtitulo">
+                                Faculdade UNOPAR
+                            </div>
+                            <div class="desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, sunt fugit. Magni
+                                consectetur eos qui veniam esse. Exercitationem amet rerum placeat sit ut saepe tenetur
+                                eaque reprehenderit, laborum ab dolor!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-exp">
+                        <div class="ano">2024</div>
+                        <i class="fa-solid fa-question"></i>
+                        <div class="conteudo">
+                            <div class="titulo"></div>
+                            <div class="subtitulo"></div>
+                            <div class="desc"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTATO -->
+        <div class="tab" id="contato">
+            <div id="conteudo-contato">
+                <h1>Obrigada</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, veniam aut. Debitis, officia beatae minima obcaecati sed earum atque, explicabo necessitatibus eligendi doloremque tempore consequatur sunt nesciunt, eum itaque quisquam.</p>
+                
+                <div id="buttons-contato">
+                    <button></button><button></button><button></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="../scripts/slide.js"></script>
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/burg.js"></script>
+</body>
+
+</html>

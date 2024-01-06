@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #eee;
+    font-family: 'Cabin', sans-serif;  
+}
+
+:root {
+    --andromeda-dark: #23262e;
+    --andromeda-light: #52596d;
+    --laranja: #ff3157;
+    --salmao: #FF978E;
+    --azul: #0597F2;
+    --ciano: #02FEFF;
+    --roxo-dark: #3A378C;
+    --roxo-light: #914BF2;
+}
+
+body {
+    display: flex;
+    justify-content: center;    
+    background: var(--andromeda-dark);
+    /* border: 2px solid green; */
+}
+
+a {
+    cursor: pointer;
+}
+
+.container {
+    height: 100vh;
+    width: 1165px;
+    max-width: 100%;  
+    max-height: 910px;  
+    /* border: 2px solid rgb(50, 235, 50); */
+}
+
+.tab {
+    display: flex;
+    height: calc(100% - 74px);
+    /* height: auto; */
+    margin-top: 74px;
+    border: 2px solid cadetblue;
+}
+
+.hidetab {
+    display: none;
+}
+
+

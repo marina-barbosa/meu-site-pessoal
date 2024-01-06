@@ -1,0 +1,29 @@
+#contato {
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+#conteudo-contato{
+    width: 60%;
+    margin: 0 auto;
+}
+
+#contato h1, #contato p {
+    text-align: center; 
+    margin: 20px 0;   
+}
+
+#contato div button {
+    margin: 15px auto;
+}
+
+#buttons-contato {
+    display: flex;
+}
+
+@media screen and (max-width: 1060px) {
+    #buttons-contato {
+        display: flex;
+        flex-direction: column;
+    }
+}

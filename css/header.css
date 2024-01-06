@@ -1,0 +1,121 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    width: 100%;
+    height: 74px;
+    max-width: 1160px;
+    position: fixed;
+    z-index: 100;
+    background: var(--andromeda-dark);
+    /* border: 1px solid plum; */
+}
+
+div #logo, a #logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    height: 50px;
+}
+
+nav a {
+    font-weight: bold;
+    margin: 0 30px;
+}
+
+#toggles, .toggles-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tema, #idioma{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background: var(--andromeda-light);
+}
+
+
+/* BOTAO BURGUER */
+
+#burg {
+    width: 25px;
+    border-top: 2px solid;
+    cursor: pointer;
+    display: none;
+}
+
+#burg::after,
+#burg::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+}
+
+#toggles.ativa #burg {
+    border-top-color: transparent;
+}
+
+#toggles.ativa #burg::before {
+    transform: rotate(135deg);
+}
+
+#toggles.ativa #burg::after {
+    border-top-color: transparent;
+    transform: rotate(-135deg);
+    top: -7px;
+}
+
+@media screen and (max-width: 825px) {
+    #burg {
+        display: block;
+    }
+
+    .hideMobile {
+        visibility: hidden;
+        /* transition: 0.6s; */
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 74px;
+        left: 0;
+        z-index: 200;
+        align-items: center;
+        padding-top: 70px;
+        gap: 30px;
+        width: 100%;
+        height: 100vh;
+        background: #11111180;
+        backdrop-filter: blur(20px);
+    }
+
+    nav a {
+        background: none;
+    }
+
+    .toggles-wrap {
+        display: flex;
+        flex-direction: column;
+        position: absolute; 
+        left: calc(50% - 15px);
+        top: 390px;
+        z-index: 200;
+        background: none;
+        gap: 10px;
+    }
+
+
+}
