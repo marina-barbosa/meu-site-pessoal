@@ -35,15 +35,15 @@ h1, #dev {
 }
 
 #dev {    
-    color: var(--laranja);
+    color: var(--carmesin);
 }
 
 button {
     width: 150px;
     height: 40px;
     border-radius: 7px;
-    background: linear-gradient(to right, var(--roxo-light) 5%, var(--laranja) 95%);
-    /* background: var(--laranja); */
+    background: linear-gradient(to right, var(--roxo-light) 5%, var(--carmesin) 95%);
+    /* background: var(--carmesin); */
 }
 
 

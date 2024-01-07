@@ -38,7 +38,7 @@
 }
 
 .topico-item{
-    color: var(--laranja);
+    color: var(--carmesin);
 }
 
 .button-carrossel button{
@@ -81,7 +81,7 @@
 
 .titulo-thumb{
     font-weight: bold;
-    color: var(--laranja);
+    color: var(--carmesin);
 }
 
 /* SETAS */
@@ -255,7 +255,7 @@
 .carregamento{
     width: 0%;
     height: 3px;
-    background: var(--laranja);
+    background: var(--carmesin);
     position: absolute;
     z-index: 100;
     top: 0;
