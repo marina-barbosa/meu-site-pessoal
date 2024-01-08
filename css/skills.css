@@ -1,8 +1,10 @@
 
-#skills {
+#skills .container{
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 40%;
 }
 
 .linha{
@@ -52,7 +54,7 @@ h3 {
         grid-template-columns: 1fr 1fr; 
     }
 
-    #skills {
+    #skills .container{
         height: auto;
     }
 

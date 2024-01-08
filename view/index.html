@@ -21,80 +21,31 @@
 </head>
 
 <body>
-  <div class="container">
 
-    <header>
-      <div>
-        <a><img id="logo" src="../assets/invader.png" alt=""></a>
-      </div>
-
-      <nav class="hideMobile" id="nav">
-        <a id="a-home" onclick="navHome()">Home</a>
-        <a id="a-skills" onclick="navSkills()">Skills</a>
-        <a id="a-projetos" onclick="navProjetos()">Projeto</a>
-        <a id="a-exp" onclick="navExp()">Exp</a>
-        <a id="a-contato" onclick="navContato()">Contato</a>
-      </nav>
-
-      <div id="toggles">
-        <div class="toggles-wrap hideMobile">
-          <div id="tema"></div>
-          <div id="idioma"></div>
-        </div>
-        <span id="burg"></span>
-      </div>
-
-    </header>
-
-    <!-- HOME -->
-    <div class="tab" id="home">
-      <div class="left">
-        <div class="textos">
-
-          <h1>Marina Barbosa</h1>
-          <h1 id="dev">>_ Desenvolvedora BackEnd && FullStack</h1>
-          <section>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic deleniti temporibus quia illo
-              eveniet excepturi accusamus omnis itaque earum doloribus qui numquam harum sunt, ea modi
-              maiores
-              quidem at error!
-            </p>
-            <p>
-              Aliquam enim quo, fuga culpa error, ut quia dicta recusandae ducimus atque nihil tempora
-              quod
-              tenetur. Eligendi itaque eius asperiores facilis optio facere officiis modi unde, esse eos
-              nulla
-              officia!
-            </p>
-          </section>
-          <button>Veja mais</button>
-        </div>
-      </div>
-
-      <div class="right">
-        <div>
-          <img src="../assets/invader.png" alt="">
-        </div>
-        <div class="icons">
-          <a href="https://github.com/marina-barbosa" target="_blank">
-            <i class="fa-brands fa-square-github fa-2xl"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/marina-barbosa-exp/" target="_blank">
-            <i class="fa-brands fa-linkedin fa-2xl"></i>
-          </a>
-          <a href="https://wa.me/qr/BN36YTUIUJVMA1" alt="zap 13996697841" target="_blank">
-            <i class="fa-brands fa-square-whatsapp fa-2xl"></i>
-          </a>
-          <a href="mailto:marinabarbosa.exp@gmail.com" target="_blank">
-            <i class="fa-regular fa-envelope fa-2xl"></i>
-          </a>
-        </div>
-      </div>
+  <header>
+    <div>
+      <a data-tab="home"><img id="logo" src="../assets/invader.png" alt=""></a>
     </div>
 
-    <!-- SKILLS -->
-    <div class="tab hidetab" id="skills">
+    <nav class="hideMobile" id="nav">
+      <a data-tab="home" id="a-home">Home</a>
+      <a data-tab="skills" id="a-skills">Skills</a>
+      <a data-tab="projetos" id="a-projetos">Projeto</a>
+      <a data-tab="exp" id="a-exp">Exp</a>
+      <a data-tab="contato" id="a-contato">Contato</a>
+    </nav>
+
+    <div id="toggles">
+      <div class="toggles-wrap hideMobile">
+        <div id="tema"></div>
+        <div id="idioma"></div>
+      </div>
+      <span id="burg"></span>
+    </div>
+  </header> 
+
+  <div class="tab" id="skills" style="background: var(--andromeda-dark);">
+    <div class="container">
       <h3>I code with</h3>
       <div class="linha">
         <div>
@@ -132,9 +83,7 @@
           <span>Bootstrap</span>
         </div>
       </div>
-
       <h3>Studying in this moment</h3>
-
       <div class="linha">
         <div>
           <i class="devicon-typescript-plain colored"></i>
@@ -148,13 +97,12 @@
           <i class="devicon-csharp-plain-wordmark colored"></i>
           <span>C#</span>
         </div>
-
       </div>
-
     </div>
+  </div>
 
-    <!-- PROJETOS -->
-    <div class="tab hidetab" id="projetos">
+  <div class="tab" id="projetos" style="background: #3d4457;">
+    <div class="container">
       <div class="carrossel">
 
         <div class="lista-carrossel">
@@ -162,8 +110,10 @@
             <img src="../assets/print-fasttrack.png">
             <div class="conteudo-carrossel">
               <div class="autor">MARINA</div>
-              <div class="titulo-item">Gerenciador de Tarefas</div>
-              <div class="topico-item">Front</div>
+              <div class="titulo-item">
+                <p>Gerenciador de Tarefas</p>
+                <span class="topico-item">Front</span>
+              </div>              
               <div class="desc-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga amet beatae enim
                 dolore ipsam facere ipsa nihil sint delectus ad, nostrum a dicta possimus atque rerum quaerat corporis
                 inventore ullam!</div>
@@ -177,8 +127,10 @@
             <img src="../assets/print-hellocomponent.png">
             <div class="conteudo-carrossel">
               <div class="autor">MARINA</div>
-              <div class="titulo-item">Web Components</div>
-              <div class="topico-item">Front</div>
+              <div class="titulo-item">
+                <p>Web Components</p>
+                <span class="topico-item">Front</span>
+              </div> 
               <div class="desc-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga amet beatae enim
                 dolore ipsam facere ipsa nihil sint delectus ad, nostrum a dicta possimus atque rerum quaerat corporis
                 inventore ullam!</div>
@@ -192,8 +144,10 @@
             <img src="../assets/print-lovet.png">
             <div class="conteudo-carrossel">
               <div class="autor">MARINA</div>
-              <div class="titulo-item">Lovet</div>
-              <div class="topico-item">Front</div>
+              <div class="titulo-item">
+                <p>Lovet</p>
+                <span class="topico-item">Front</span>
+              </div> 
               <div class="desc-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga amet beatae enim
                 dolore ipsam facere ipsa nihil sint delectus ad, nostrum a dicta possimus atque rerum quaerat corporis
                 inventore ullam!</div>
@@ -207,8 +161,10 @@
             <img src="../assets/print-mario.png">
             <div class="conteudo-carrossel">
               <div class="autor">MARINA</div>
-              <div class="titulo-item">Jogo Mario</div>
-              <div class="topico-item">Game</div>
+              <div class="titulo-item">
+                <p>Jogo Mario</p>
+                <span class="topico-item">Game</span>
+              </div> 
               <div class="desc-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga amet beatae enim
                 dolore ipsam facere ipsa nihil sint delectus ad, nostrum a dicta possimus atque rerum quaerat corporis
                 inventore ullam!</div>
@@ -222,8 +178,10 @@
             <img src="../assets/print-portf.png">
             <div class="conteudo-carrossel">
               <div class="autor">MARINA</div>
-              <div class="titulo-item">Portfolio</div>
-              <div class="topico-item">Front</div>
+              <div class="titulo-item">
+                <p>Portfolio v1</p>
+                <span class="topico-item">Front</span>
+              </div> 
               <div class="desc-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga amet beatae enim
                 dolore ipsam facere ipsa nihil sint delectus ad, nostrum a dicta possimus atque rerum quaerat corporis
                 inventore ullam!</div>
@@ -237,8 +195,10 @@
             <img src="../assets/print-womaker.png">
             <div class="conteudo-carrossel">
               <div class="autor">MARINA</div>
-              <div class="titulo-item">Womakers-Code</div>
-              <div class="topico-item">Front</div>
+              <div class="titulo-item">
+                <p>Womaker-Code</p>
+                <span class="topico-item">Front</span>
+              </div> 
               <div class="desc-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga amet beatae enim
                 dolore ipsam facere ipsa nihil sint delectus ad, nostrum a dicta possimus atque rerum quaerat corporis
                 inventore ullam!</div>
@@ -256,10 +216,7 @@
             <div class="conteudo-thumb">
               <div class="titulo-thumb">
                 Name Slide
-              </div>
-              <div class="desc-thumb">
-                Descricao
-              </div>
+              </div>              
             </div>
           </div>
           <div class="item-thumb">
@@ -267,10 +224,7 @@
             <div class="conteudo-thumb">
               <div class="titulo-thumb">
                 Name Slide
-              </div>
-              <div class="desc-thumb">
-                Descricao
-              </div>
+              </div>              
             </div>
           </div>
           <div class="item-thumb">
@@ -278,10 +232,7 @@
             <div class="conteudo-thumb">
               <div class="titulo-thumb">
                 Name Slide
-              </div>
-              <div class="desc-thumb">
-                Descricao
-              </div>
+              </div>              
             </div>
           </div>
           <div class="item-thumb">
@@ -289,10 +240,7 @@
             <div class="conteudo-thumb">
               <div class="titulo-thumb">
                 Name Slide
-              </div>
-              <div class="desc-thumb">
-                Descricao
-              </div>
+              </div>              
             </div>
           </div>
           <div class="item-thumb">
@@ -300,10 +248,7 @@
             <div class="conteudo-thumb">
               <div class="titulo-thumb">
                 Name Slide
-              </div>
-              <div class="desc-thumb">
-                Descricao
-              </div>
+              </div>              
             </div>
           </div>
           <div class="item-thumb">
@@ -311,27 +256,23 @@
             <div class="conteudo-thumb">
               <div class="titulo-thumb">
                 Name Slide
-              </div>
-              <div class="desc-thumb">
-                Descricao
-              </div>
+              </div>              
             </div>
           </div>
         </div>
 
         <div class="setas">
-          <button id="next"><</button>
+          <button id="next">&lt;</button>
           <button id="prev">></button>
         </div>
+
         <span class="carregamento"></span>
-
       </div>
-
     </div>
+  </div>
 
-
-    <!-- EXP -->
-    <div class="tab hidetab" id="exp">
+  <div class="tab" id="exp" style="background: #343b4d;">
+    <div class="container">
       <div class="container-exp">
         <div class="linha-exp">
           <div class="card-exp">
@@ -397,22 +338,70 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- CONTATO -->
-    <div class="tab hidetab" id="contato">
+  <div class="tab" id="contato" style="background: #40475c;">
+    <div class="container">
       <div id="conteudo-contato">
-        <h1>Obrigada</h1>
+        <h1>Lorem ipsum!</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, veniam aut. Debitis, officia beatae
           minima obcaecati sed earum atque, explicabo necessitatibus eligendi doloremque tempore consequatur sunt
           nesciunt, eum itaque quisquam.</p>
-
         <div id="buttons-contato">
           <button></button><button></button><button></button>
         </div>
       </div>
     </div>
-
   </div>
+
+  <div class="tab" id="home" style="background: var(--andromeda-dark);">
+    <div class="container">
+      <div class="left">
+        <div class="textos">
+          <h1>Marina Barbosa</h1>
+          <h1 id="dev">>_ Desenvolvedora BackEnd && FullStack</h1>
+          <section>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic deleniti temporibus quia illo
+              eveniet excepturi accusamus omnis itaque earum doloribus qui numquam harum sunt, ea modi
+              maiores
+              quidem at error!
+            </p>
+            <p>
+              Aliquam enim quo, fuga culpa error, ut quia dicta recusandae ducimus atque nihil tempora
+              quod
+              tenetur. Eligendi itaque eius asperiores facilis optio facere officiis modi unde, esse eos
+              nulla
+              officia!
+            </p>
+          </section>
+          <button>Veja mais</button>
+        </div>
+      </div>
+      <div class="right">
+        <div>
+          <img src="../assets/invader.png" alt="">
+        </div>
+        <div class="icons">
+          <a href="https://github.com/marina-barbosa" target="_blank">
+            <i class="fa-brands fa-square-github fa-2xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/marina-barbosa-exp/" target="_blank">
+            <i class="fa-brands fa-linkedin fa-2xl"></i>
+          </a>
+          <a href="https://wa.me/qr/BN36YTUIUJVMA1" alt="zap 13996697841" target="_blank">
+            <i class="fa-brands fa-square-whatsapp fa-2xl"></i>
+          </a>
+          <a href="mailto:marinabarbosa.exp@gmail.com" target="_blank">
+            <i class="fa-regular fa-envelope fa-2xl"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
   <script src="../scripts/slide.js"></script>
   <script src="../scripts/navbar.js"></script>
   <script src="../scripts/burg.js"></script>

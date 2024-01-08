@@ -1,14 +1,18 @@
 
 
-#exp {
+#exp {    
     background-image: linear-gradient(
         45deg, #212632, #242A34, #3C4C5A
     );
     background-size: cover;
 }
 
+#exp .container {
+    display: flex;
+}
+
 .container-exp {
-    overflow: auto;
+    overflow: auto;    
 }
 
 .linha-exp {

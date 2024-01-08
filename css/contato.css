@@ -26,4 +26,8 @@
         display: flex;
         flex-direction: column;
     }
+
+    #contato{
+        padding-top: 30px;
+    }
 }
