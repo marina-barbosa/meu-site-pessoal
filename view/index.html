@@ -7,6 +7,7 @@
   <title>Marina Barbosa</title>
 
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/button.css">
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/nav-deslizante.css">
   <link rel="stylesheet" href="../css/home.css">
@@ -363,7 +364,7 @@
     </div>
   </div>
 
-  <div class="tab" id="home" style="background: var(--andromeda-dark);">
+  <div class="tab init" id="home" style="background: var(--andromeda-dark);">
     <div class="container">
       <div class="left">
         <div class="textos">
@@ -384,7 +385,10 @@
               officia!
             </p>
           </section>
-          <button>Veja mais</button>
+          
+            <button class="myButton">Veja mais</button>
+            <div class="circle"></div>
+          
         </div>
       </div>
       <div class="right">
@@ -393,16 +397,28 @@
         </div>
         <div class="icons">
           <a href="https://github.com/marina-barbosa" target="_blank">
-            <i class="fa-brands fa-square-github fa-2xl"></i>
+            <div class="social icon-github">
+              <div class="icon"><i class="fa-brands fa-square-github"></i></div>
+              <span style="color: #333;">Github</span>
+            </div>
           </a>
           <a href="https://www.linkedin.com/in/marina-barbosa-exp/" target="_blank">
-            <i class="fa-brands fa-linkedin fa-2xl"></i>
+            <div class="social icon-linkedin">
+              <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+              <span style="color: #66a0d9;">Linkedin</span>
+            </div>
           </a>
           <a href="https://wa.me/qr/BN36YTUIUJVMA1" alt="zap 13996697841" target="_blank">
-            <i class="fa-brands fa-square-whatsapp fa-2xl"></i>
+            <div class="social icon-whatsapp">
+              <div class="icon"><i class="fa-brands fa-square-whatsapp"></i></div>
+              <span style="color: #25d366;">Whatsapp</span>
+            </div>
           </a>
           <a href="mailto:marinabarbosa.exp@gmail.com" target="_blank">
-            <i class="fa-regular fa-envelope fa-2xl"></i>
+            <div class="social icon-email">
+              <div class="icon"><i class="fa-regular fa-envelope"></i></div>
+              <span style="color: #ea4335;">Email</span>
+            </div>
           </a>
         </div>
       </div>
@@ -411,9 +427,11 @@
 
 
 
+
   <script src="../scripts/slide.js"></script>
   <script src="../scripts/navbar.js"></script>
   <script src="../scripts/burg.js"></script>
+  <script src="../scripts/button.js"></script>
 </body>
 
 </html>

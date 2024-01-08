@@ -58,7 +58,9 @@ a {
 
 /* data-tab */
 
-
+.init {
+    z-index: 500;
+}
 
 .tab{
     width: 100%;

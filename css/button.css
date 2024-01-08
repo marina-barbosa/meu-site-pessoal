@@ -1,0 +1,30 @@
+button {
+    width: 150px;
+    height: 35px;
+    border-radius: 7px;
+    /* background: linear-gradient(to right, var(--roxo-light) 5%, var(--carmesin) 95%); */
+    background: var(--carmesin);
+    /* border: none; */
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+button:hover {
+    background: transparent;
+}
+
+.myButton {
+    position: relative;
+    /* Outros estilos do botão */
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000;
+    display: none;
+    position: absolute;
+    pointer-events: none;
+    /* Permite que o mouse passe por cima do círculo */
+}

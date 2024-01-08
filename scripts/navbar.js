@@ -103,7 +103,7 @@ let contact = document.querySelector('#contato');
 
 let aHref = document.querySelectorAll('input');
 
-let active = '#home';
+let active = '#exp';
 let zIndex = 600;
 
 aHref.forEach(input => {

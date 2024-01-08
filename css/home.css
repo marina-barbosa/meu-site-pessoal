@@ -30,10 +30,6 @@
     /* border: 2px solid yellow; */
 }
 
-#home span {
-    font-size: 2rem;
-}
-
 h1, #dev {
     font-family: 'Source Code Pro', monospace;    
 }
@@ -42,23 +38,8 @@ h1, #dev {
     color: var(--carmesin);
 }
 
-button {
-    width: 150px;
-    height: 40px;
-    border-radius: 7px;
-    background: linear-gradient(to right, var(--roxo-light) 5%, var(--carmesin) 95%);
-    /* background: var(--carmesin); */
-}
-
-
-
 
 /* RIGHT */
-
-.right, .icons {
-    margin: 0 auto;    
-    padding-right: 20px;    
-}
 
 .right img { 
     margin-top: 200px;  
@@ -67,9 +48,61 @@ button {
     width: 300px;    
 }
 
-i{
-    margin: 5px;
+/* SOCIAL */
+/* 66a0d9 25d366 ea4335*/
+#home .right, .icons {
+    margin: 0 auto;    
+    padding-right: 20px;    
 }
+
+#home .icons .social {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    background: var(--andromeda-light);
+    box-shadow: 0px 5px 15px rgba(245, 189, 189, 0.5);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+}
+
+#home .icons .social:hover{
+    width: 150px;
+}
+
+#home .icons .social .icon{
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease-out;
+}
+
+#home .icons .social:nth-child(1):hover .icon .fa-square-github{
+    background: #333;
+}
+
+#home .icons .social:hover .fa-linkedin{
+    background: #66a0d9;
+}
+
+#home .icons .social:hover .fa-square-whatsapp{
+    background: #25d366;
+}
+
+#home .icons .social:hover .fa-envelope{
+    background: #ea4335;
+}
+
+#home .icons .social .icon i {
+    font-size: 25px;
+}
+
+#home .social span {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
 
 
 
