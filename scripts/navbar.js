@@ -101,14 +101,14 @@ let project = document.querySelector('#projetos');
 let experience = document.querySelector('#exp');
 let contact = document.querySelector('#contato');
 
-let aHref = document.querySelectorAll('a');
+let aHref = document.querySelectorAll('input');
 
 let active = '#home';
 let zIndex = 600;
 
-aHref.forEach(a => {
-    a.addEventListener('click', function(event){
-        let tab = a.dataset.tab;
+aHref.forEach(input => {
+    input.addEventListener('click', function(event){
+        let tab = input.dataset.tab;
         if(tab !== null && tab !== active){
 
             let activeOld = document.querySelector('.tab.active');

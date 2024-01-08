@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/nav-deslizante.css">
   <link rel="stylesheet" href="../css/home.css">
   <link rel="stylesheet" href="../css/skills.css">
   <link rel="stylesheet" href="../css/projetos.css">
@@ -28,11 +29,19 @@
     </div>
 
     <nav class="hideMobile" id="nav">
-      <a data-tab="home" id="a-home">Home</a>
-      <a data-tab="skills" id="a-skills">Skills</a>
-      <a data-tab="projetos" id="a-projetos">Projeto</a>
-      <a data-tab="exp" id="a-exp">Exp</a>
-      <a data-tab="contato" id="a-contato">Contato</a>
+      <input data-tab="home" id="a-home" type="radio" name="tabMenu" checked>
+      <input data-tab="skills" id="a-skills" type="radio" name="tabMenu">
+      <input data-tab="projetos" id="a-projetos" type="radio" name="tabMenu">
+      <input data-tab="exp" id="a-exp" type="radio" name="tabMenu">
+      <input data-tab="contato" id="a-contato" type="radio" name="tabMenu">
+      <div class="labels">
+        <label for="a-home">Home</label>
+        <label for="a-skills">Skills</label>
+        <label for="a-projetos">Projetos</label>
+        <label for="a-exp">Exp</label>
+        <label for="a-contato">Contato</label>
+        <span class="underline"></span>
+      </div>
     </nav>
 
     <div id="toggles">

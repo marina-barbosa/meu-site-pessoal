@@ -48,6 +48,10 @@
     margin-right: 5px;
 }
 
+.titulo-item, .topic-item {
+    -webkit-text-stroke: 1px #444;
+}
+
 /* THUMBNAIL */
 
 .thumbnail {
@@ -87,6 +91,7 @@
 .titulo-thumb {
     font-weight: bold;
     color: var(--carmesin);
+    -webkit-text-stroke: 1px purple;
     /* color: var(--andromeda-dark); */
     /* text-shadow: 0px 0px 10px #111; */
 }
@@ -236,6 +241,8 @@
     }
 }
 
+
+
 .carrossel.prev .thumbnail .item-thumb:nth-child(1) {
     width: 0;
     overflow: hidden;
@@ -296,6 +303,6 @@
     }
 
     .titulo-item {
-        font-size: 30px;
+        font-size: 30px;        
     }
 }
