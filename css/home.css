@@ -60,7 +60,7 @@ h1, #dev {
     height: 40px;
     width: 43px;
     background: var(--andromeda-light);
-    box-shadow: 0px 5px 15px rgba(245, 189, 189, 0.5);
+    box-shadow: 0px 5px 15px rgba(253, 253, 253, 0.2);
     border: 1px solid #fff;
     border-radius: 5px;
     transition: all 0.3s ease-out;
