@@ -1,15 +1,23 @@
+.header{
+    width: 100vw;
+    height: 74px;
+    display: flex ;
+    justify-content: center;
+    background: var(--andromeda-dark);
+    z-index: 6000;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
     width: 100%;
     height: 74px;
+    padding: 0 30px;
     max-width: 1160px;
     position: fixed;
     z-index: 6000;
     background: var(--andromeda-dark);
-    /* border: 1px solid plum; */
 }
 
 div #logo, a #logo {
