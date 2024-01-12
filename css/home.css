@@ -73,11 +73,9 @@ h1, #dev {
 
 #home .icons .social .icon{
     display: inline-block;
-    /* text-align: center; */
     transition: all 0.3s ease-out;
     position: relative;
     top: -8%;
-    /* left: 0%; */
 }
 
 #home .icons .social:nth-child(1):hover .icon .fa-square-github{
@@ -88,18 +86,24 @@ h1, #dev {
     background: #66a0d9;
 }
 
-#home .icons .social:hover .fa-square-whatsapp{
+#home .icons .social:hover .fa-file-lines{
     background: #25d366;
 }
 
-#home .icons .social:hover .fa-envelope{
+/* #home .icons .social:hover .fa-envelope{
     background: #ea4335;
-}
+} */
 
 #home .icons .social .icon i {
     font-size: 25px;
-
     padding: 9px 9px;
+}
+
+#home > div > div.right > div.icons > a:nth-child(3) > div{    
+    text-align: center;
+}
+#home > div > div.right > div.icons > a:nth-child(3) > div:hover{
+    text-align: start;
 }
 
 #home .social span {
@@ -119,17 +123,17 @@ h1, #dev {
     left: 8%;
 }
 
-#home .icon-whatsapp span {
+#home .icon-cv span {
     position: relative;
     top: -13%;
     left: 2%;
 }
 
-#home .icon-email span {
+/* #home .icon-email span {
     position: relative;
     top: -13%;
     left: 14%;
-}
+} */
 
 
 
