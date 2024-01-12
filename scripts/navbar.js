@@ -73,25 +73,25 @@ function navContato() {
 //     'a-projetos': tabProjetos,
 //     'a-exp': tabExp
 //   };
-  
+
 //   const tabs = Object.values(buttonIds);
-  
+
 //   function hideAllTabs() {
 //     tabs.forEach(tab => {
 //       tab.classList.add('hidetab');
 //     });
 //   }
-  
+
 //   function handleNavigation(event) {
 //     const tabId = event.target.id;
 //     hideAllTabs();
 //     buttonIds[tabId].classList.remove('hidetab');
 //   }
-  
+
 //   Object.values(buttonIds).forEach(button => {
 //     button.addEventListener('click', handleNavigation);
 //   });
-  
+
 
 // NAVBAR COM Z-INDEX E EFEITOS DATA-TAB
 
@@ -103,16 +103,16 @@ let contact = document.querySelector('#contato');
 
 let aHref = document.querySelectorAll('input');
 
-let active = '#exp';
+let active = 'home';
 let zIndex = 600;
 
 aHref.forEach(input => {
-    input.addEventListener('click', function(event){
+    input.addEventListener('click', function (event) {
         let tab = input.dataset.tab;
-        if(tab !== null && tab !== active){
+        if (tab !== null && tab !== active) {
 
             let activeOld = document.querySelector('.tab.active');
-            if(activeOld) activeOld.classList.remove('active');
+            if (activeOld) activeOld.classList.remove('active');
             active = tab;
 
             let tabActive = document.getElementById(active);
