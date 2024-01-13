@@ -19,14 +19,41 @@
 
 #buttons-contato {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+#buttons-contato a{
+    transition: 0.5s;
+}
+
+#buttons-contato a:nth-child(1){
+    order: 1;  
+}
+#buttons-contato a:nth-child(3){
+    order: 2;  
+}
+#buttons-contato a:nth-child(2){
+    order: 3;  
+}
+
+#buttons-contato a:hover:nth-child(1){
+    color: #66a0d9;
+}
+#buttons-contato a:hover:nth-child(2){
+    color: #25d366;
+}
+#buttons-contato a:hover:nth-child(3){
+    color: #ea4335;    
 }
 
 @media screen and (max-width: 1060px) {
     #buttons-contato {
         display: flex;
         flex-direction: column;
+        gap: 50px;
     }
-
     #contato{
         padding-top: 30px;
     }

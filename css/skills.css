@@ -44,18 +44,24 @@ h3 {
     background: var(--andromeda-light);
 }
 
-.linha:nth-last-child(1){
+.linha:nth-last-child(1), .linha:nth-child(5){
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 @media screen and (max-width: 825px) {
 
-    .linha, .linha:nth-last-child(1){
+    .linha, .linha:nth-last-child(1), .linha:nth-child(5){
         grid-template-columns: 1fr 1fr; 
     }
 
     #skills .container{
+        margin-top: 35%;
         height: auto;
     }
+    #skills > div > div:nth-child(7){
+        padding-bottom: 30px;
+    }
+
+    
 
 }
