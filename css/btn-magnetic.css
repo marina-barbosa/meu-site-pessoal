@@ -23,6 +23,7 @@
 
 .btn-magnetic .circle{
     display: block; 
+    border-radius: 50%;
     position: absolute; 
     background: #fc768e;
     width: 0px;

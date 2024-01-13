@@ -106,8 +106,7 @@ nav a {
         gap: 30px;
         width: 100%;
         height: 100vh;
-        background: #11111180;
-        backdrop-filter: blur(20px);
+        background: rgba(35, 38, 46, 0.96);
     }
 
     nav a {
@@ -119,7 +118,7 @@ nav a {
         flex-direction: column;
         position: absolute; 
         left: calc(50% - 15px);
-        top: 390px;
+        top: 400px;
         z-index: 200;
         background: none;
         gap: 10px;

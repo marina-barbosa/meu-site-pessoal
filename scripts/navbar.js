@@ -108,6 +108,9 @@ let zIndex = 600;
 
 aHref.forEach(input => {
     input.addEventListener('click', function (event) {
+        if (window.innerWidth <= 825) {
+            toggleMenu();
+        }
         let tab = input.dataset.tab;
         if (tab !== null && tab !== active) {
 
@@ -122,6 +125,7 @@ aHref.forEach(input => {
             tabActive.style.setProperty('--y', event.clientY + 'px');
             tabActive.classList.add('active');
         }
+        
     })
 })
 
