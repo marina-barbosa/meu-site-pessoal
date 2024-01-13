@@ -30,7 +30,7 @@
     /* border: 2px solid yellow; */
 }
 
-#dev {    
+#dev, #text-typed {    
     font-family: 'Source Code Pro', monospace;    
     color: var(--carmesin);
 }
