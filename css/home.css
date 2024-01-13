@@ -30,11 +30,8 @@
     /* border: 2px solid yellow; */
 }
 
-h1, #dev {
-    font-family: 'Source Code Pro', monospace;    
-}
-
 #dev {    
+    font-family: 'Source Code Pro', monospace;    
     color: var(--carmesin);
 }
 

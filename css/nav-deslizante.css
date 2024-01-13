@@ -1,11 +1,16 @@
+nav {
+    position: relative;
+    letter-spacing: 0.1em;
+}
 
 nav input {
     visibility: hidden;
     display: none;
+    position: relative;
 }
 
 .labels {
-    position:relative;
+    position: relative;
     display: flex;
     gap: 50px;
     padding: 20px 20px;
@@ -22,31 +27,31 @@ nav input {
     transition: .5s;
 }
 
-.labels label:hover{
+.labels label:hover {
     opacity: 1;
     filter: drop-shadow(0 0 10px #fff);
 }
 
-nav input:nth-of-type(1):checked ~ .labels label:nth-of-type(1),
-nav input:nth-of-type(2):checked ~ .labels label:nth-of-type(2),
-nav input:nth-of-type(3):checked ~ .labels label:nth-of-type(3),
-nav input:nth-of-type(4):checked ~ .labels label:nth-of-type(4),
-nav input:nth-of-type(5):checked ~ .labels label:nth-of-type(5) {
+nav input:nth-of-type(1):checked~.labels label:nth-of-type(1),
+nav input:nth-of-type(2):checked~.labels label:nth-of-type(2),
+nav input:nth-of-type(3):checked~.labels label:nth-of-type(3),
+nav input:nth-of-type(4):checked~.labels label:nth-of-type(4),
+nav input:nth-of-type(5):checked~.labels label:nth-of-type(5) {
     color: #eee;
     opacity: 1;
     filter: drop-shadow(0 0 10px #fff);
 }
 
-.underline{
+.underline {
     width: 20%;
     height: 2px;
     position: absolute;
     left: 0;
-    bottom: 14px;  
+    bottom: 14px;
     transition: .5s;
 }
 
-.underline::before{
+.underline::before {
     content: '';
     width: 40%;
     height: 100%;
@@ -57,52 +62,63 @@ nav input:nth-of-type(5):checked ~ .labels label:nth-of-type(5) {
     filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #fff) drop-shadow(0 0 30px #fff) drop-shadow(0 0 50px #fff) blur(0.7px);
 }
 
-nav input:nth-of-type(1):checked ~ .labels .underline {
+nav input:nth-of-type(1):checked~.labels .underline {
     left: 0;
 }
-nav input:nth-of-type(2):checked ~ .labels .underline {
+
+nav input:nth-of-type(2):checked~.labels .underline {
     left: 20%;
 }
-nav input:nth-of-type(3):checked ~ .labels .underline {
+
+nav input:nth-of-type(3):checked~.labels .underline {
     left: 40%;
 }
-nav input:nth-of-type(4):checked ~ .labels .underline {
+
+nav input:nth-of-type(4):checked~.labels .underline {
     left: 60%;
 }
-nav input:nth-of-type(5):checked ~ .labels .underline {
+
+nav input:nth-of-type(5):checked~.labels .underline {
     left: 80%;
 }
 
 @media screen and (max-width: 825px) {
-    .labels{
+    nav {
+        position: absolute;
+    }
+    .labels {
         flex-direction: column;
         align-items: center;
         top: -30px;
         gap: 20px;
     }
 
-    .underline{
+    .underline {
         /* display: none; */
         width: 40%;
     }
 
-    nav input:nth-of-type(1):checked ~ .labels .underline {
+    nav input:nth-of-type(1):checked~.labels .underline {
         top: 20%;
         left: 32%;
     }
-    nav input:nth-of-type(2):checked ~ .labels .underline {
+
+    nav input:nth-of-type(2):checked~.labels .underline {
         top: 40%;
         left: 32%;
     }
-    nav input:nth-of-type(3):checked ~ .labels .underline {
+
+    nav input:nth-of-type(3):checked~.labels .underline {
         top: 58.5%;
         left: 32%;
     }
-    nav input:nth-of-type(4):checked ~ .labels .underline {
+
+    nav input:nth-of-type(4):checked~.labels .underline {
         top: 78%;
         left: 32%;
     }
-    nav input:nth-of-type(5):checked ~ .labels .underline {
+
+    nav input:nth-of-type(5):checked~.labels .underline {
         top: 95%;
         left: 32%;
     }
