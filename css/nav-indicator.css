@@ -1,0 +1,39 @@
+nav {
+    position: relative;
+    display: flex;
+    background: var(--andromeda-dark);
+    /* padding: 5px 0; */
+}
+
+div .labels {
+    position: relative;
+    display: flex;
+}
+
+header input {
+    display: none;
+}
+
+nav .labels label {
+    position: relative;
+    text-decoration: none;
+    padding: 15px 25px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+
+}
+.labels .underline {
+    position: relative;
+    left: -506px;
+    bottom: -12px;
+    height: 100%;
+    width: 118px;
+    border-bottom: 2px solid #c2e8fa;
+    background: linear-gradient(0deg,#c2e8fa33,transparent);
+    transition: 0.5s;
+    /* pointer-events: none; */
+    filter: drop-shadow(0 5px 25px #c2e8fa);
+    display: block;
+}

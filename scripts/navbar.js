@@ -14,58 +14,58 @@
             </nav> */}
 
 
-const buttonHome = document.querySelector('#a-home');
-const buttonSkills = document.querySelector('#a-skills');
-const buttonProjetos = document.querySelector('#a-projetos');
-const buttonExp = document.querySelector('#a-exp');
-const buttonContato = document.querySelector('#a-contato');
+// const buttonHome = document.querySelector('#a-home');
+// const buttonSkills = document.querySelector('#a-skills');
+// const buttonProjetos = document.querySelector('#a-projetos');
+// const buttonExp = document.querySelector('#a-exp');
+// const buttonContato = document.querySelector('#a-contato');
 
-const tabHome = document.querySelector('#home');
-const tabSkills = document.querySelector('#skills');
-const tabProjetos = document.querySelector('#projetos');
-const tabExp = document.querySelector('#exp');
-const tabContato = document.querySelector('#contato');
+// const tabHome = document.querySelector('#home');
+// const tabSkills = document.querySelector('#skills');
+// const tabProjetos = document.querySelector('#projetos');
+// const tabExp = document.querySelector('#exp');
+// const tabContato = document.querySelector('#contato');
 
 
-function navHome() {
-    tabHome.classList.remove('hidetab')
-    tabSkills.classList.add('hidetab')
-    tabProjetos.classList.add('hidetab')
-    tabExp.classList.add('hidetab')
-    tabContato.classList.add('hidetab')
-}
+// function navHome() {
+//     tabHome.classList.remove('hidetab')
+//     tabSkills.classList.add('hidetab')
+//     tabProjetos.classList.add('hidetab')
+//     tabExp.classList.add('hidetab')
+//     tabContato.classList.add('hidetab')
+// }
 
-function navSkills() {
-    tabHome.classList.add('hidetab')
-    tabSkills.classList.remove('hidetab')
-    tabProjetos.classList.add('hidetab')
-    tabExp.classList.add('hidetab')
-    tabContato.classList.add('hidetab')
-}
+// function navSkills() {
+//     tabHome.classList.add('hidetab')
+//     tabSkills.classList.remove('hidetab')
+//     tabProjetos.classList.add('hidetab')
+//     tabExp.classList.add('hidetab')
+//     tabContato.classList.add('hidetab')
+// }
 
-function navProjetos() {
-    tabHome.classList.add('hidetab')
-    tabSkills.classList.add('hidetab')
-    tabProjetos.classList.remove('hidetab')
-    tabExp.classList.add('hidetab')
-    tabContato.classList.add('hidetab')
-}
+// function navProjetos() {
+//     tabHome.classList.add('hidetab')
+//     tabSkills.classList.add('hidetab')
+//     tabProjetos.classList.remove('hidetab')
+//     tabExp.classList.add('hidetab')
+//     tabContato.classList.add('hidetab')
+// }
 
-function navExp() {
-    tabHome.classList.add('hidetab')
-    tabSkills.classList.add('hidetab')
-    tabProjetos.classList.add('hidetab')
-    tabExp.classList.remove('hidetab')
-    tabContato.classList.add('hidetab')
-}
+// function navExp() {
+//     tabHome.classList.add('hidetab')
+//     tabSkills.classList.add('hidetab')
+//     tabProjetos.classList.add('hidetab')
+//     tabExp.classList.remove('hidetab')
+//     tabContato.classList.add('hidetab')
+// }
 
-function navContato() {
-    tabHome.classList.add('hidetab')
-    tabSkills.classList.add('hidetab')
-    tabProjetos.classList.add('hidetab')
-    tabExp.classList.add('hidetab')
-    tabContato.classList.remove('hidetab')
-}
+// function navContato() {
+//     tabHome.classList.add('hidetab')
+//     tabSkills.classList.add('hidetab')
+//     tabProjetos.classList.add('hidetab')
+//     tabExp.classList.add('hidetab')
+//     tabContato.classList.remove('hidetab')
+// }
 
 // const buttonIds = {
 //     'a-home': tabHome,
