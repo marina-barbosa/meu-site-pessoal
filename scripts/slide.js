@@ -10,7 +10,7 @@ let timeDom = document.querySelector('.carrossel .carregamento');
 
 thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
 let timeRunning = 3000;
-let timeAutoNext = 9000;
+let timeAutoNext = 99999000;
 
 nextDom.onclick = function(){
     showSlider('next');    

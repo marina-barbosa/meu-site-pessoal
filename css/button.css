@@ -6,7 +6,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    letter-spacing: 0.1em;
     cursor: pointer;
     border-radius: 7px;
     overflow: hidden;

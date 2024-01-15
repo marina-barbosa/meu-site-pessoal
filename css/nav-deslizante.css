@@ -1,6 +1,5 @@
 nav {
     position: relative;
-    letter-spacing: 0.1em;
 }
 
 nav input {
@@ -17,7 +16,6 @@ nav input {
 
 
 .labels label {
-    font-size: 1.2rem;
     padding: 20px 20px;
     cursor: pointer;
     opacity: .3;

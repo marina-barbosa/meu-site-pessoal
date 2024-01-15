@@ -30,10 +30,7 @@ div #logo, a #logo {
     height: 50px;
 }
 
-nav a {
-    font-weight: bold;
-    margin: 0 30px;
-}
+
 
 #toggles {
     display: flex;
@@ -53,6 +50,13 @@ nav a {
     border-radius: 30px;
     appearance: none;
     background: var(--andromeda-light);
+    background: linear-gradient(to bottom, #52596d, #222);
+    border-radius: 30px;
+    transform: scale(0.9);
+    transition: 0.5s;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5),
+    inset 1px 1px rgba(255,255,255,0.2),
+    inset -1px 1px rgba(255,255,255,0.2);
 }
 #idioma:checked{
     background: #eee;
@@ -104,7 +108,6 @@ nav a {
 
     .hideMobile {
         visibility: hidden;
-        /* transition: 0.6s; */
     }
 
     nav {

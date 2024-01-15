@@ -1,4 +1,5 @@
 
+
 #home .container{
     display: flex;
 }
@@ -29,17 +30,6 @@
     padding: 20px 50px;
     /* border: 2px solid yellow; */
 }
-
-#dev, #text-typed {    
-    /* font-family: 'Source Code Pro', monospace;  */
-    font-family: 'JetBrains Mono', monospace;   
-    color: var(--carmesin);
-}
-
-h1{
-    font-family: 'Polly Rounded', sans-serif;    
-}
-
 
 /* RIGHT */
 
@@ -80,6 +70,11 @@ h1{
     top: -8%;
 }
 
+#home .icons .social .icon i {
+    font-size: 25px;
+    padding: 9px 9px;
+}
+
 #home .icons .social:nth-child(1):hover .icon .fa-square-github{
     background: #333;
 }
@@ -92,25 +87,11 @@ h1{
     background: #25d366;
 }
 
-/* #home .icons .social:hover .fa-envelope{
-    background: #ea4335;
-} */
-
-#home .icons .social .icon i {
-    font-size: 25px;
-    padding: 9px 9px;
-}
-
 #home > div > div.right > div.icons > a:nth-child(3) > div{    
     text-align: center;
 }
 #home > div > div.right > div.icons > a:nth-child(3) > div:hover{
     text-align: start;
-}
-
-#home .social span {
-    font-size: 20px;
-    letter-spacing: 1px;
 }
 
 #home .icon-github span {
@@ -131,19 +112,6 @@ h1{
     left: 2%;
 }
 
-/* #home .icon-email span {
-    position: relative;
-    top: -13%;
-    left: 14%;
-} */
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 825px) {
     #home .container{
@@ -160,6 +128,10 @@ h1{
     .textos, .left {        
         width: 85%;
         padding: 0px 0px;
+    }
+
+    #text-typed{
+        max-width: 90%;
     }
 
     .right img, div.icons, .left, .textos, h1, p, button {

@@ -1,5 +1,5 @@
 let typingText = new Typed('#text-typed', {
-    strings: ['Desenvolvedora BackEnd', 'Desenvolvedora FullStack'],
+    strings: ['>_ Desenvolvedora Backend', '>_ Desenvolvedora Fullstack'],
     loop: true,
     typeSpeed: 100,
     backSpeed: 50,
