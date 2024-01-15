@@ -33,6 +33,10 @@
     padding-top: 100px;
 }
 
+.textos p {
+    margin-bottom: 5px;
+}
+
 /* RIGHT */
 
 .right img { 
