@@ -31,12 +31,13 @@
 }
 
 #dev, #text-typed {    
-    font-family: 'Source Code Pro', monospace;    
+    /* font-family: 'Source Code Pro', monospace;  */
+    font-family: 'JetBrains Mono', monospace;   
     color: var(--carmesin);
 }
 
 h1{
-    font-family: 'Source Code Pro', monospace;   
+    font-family: 'Polly Rounded', sans-serif;    
 }
 
 
