@@ -1,4 +1,4 @@
-let circle = document.querySelector('.circle');
+let circles = document.querySelectorAll('.circle');
 
 let btnMagnetic = document.querySelectorAll('.btn-magnetic').forEach(btnMagnetic => {
     // magnetismo
@@ -18,11 +18,27 @@ let btnMagnetic = document.querySelectorAll('.btn-magnetic').forEach(btnMagnetic
     })
     // circulo hover
     btnMagnetic.addEventListener('mousemove', (event) => {
-        if (circle) {
-            circle.style.left = (event.offsetX - 25) + 'px';
-            circle.style.top = (event.offsetY - 25) + 'px';
+        if (circles) {
+            circles.forEach(circle => {
+                circle.style.left = (event.offsetX - 25) + 'px';
+                circle.style.top = (event.offsetY - 25) + 'px';
+            });
         }
     });
 
 })
+
+
+let buttons = document.querySelectorAll('.button');
+
+buttons.forEach((button) => {
+    button.addEventListener('mousemove', (event) => {
+        if (circles) {
+            circles.forEach(circle => {
+                circle.style.left = (event.offsetX - 25) + 'px';
+                circle.style.top = (event.offsetY - 25) + 'px';
+            });
+        }
+    });
+});
 

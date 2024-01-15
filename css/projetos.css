@@ -43,7 +43,11 @@
     color: var(--carmesin);
 }
 
-.button-carrossel button {
+.button-carrossel {
+    display: flex;
+}
+
+.button-carrossel .button {
     margin-top: 20px;
     margin-right: 5px;
 }
@@ -304,5 +308,14 @@
 
     .titulo-item {
         font-size: 30px;        
+    }
+
+    .button-carrossel {
+        display: block;
+        margin-top: 15px;
+    }
+
+    .button-carrossel .button {
+        margin-top: 5px;
     }
 }

@@ -35,17 +35,30 @@ nav a {
     margin: 0 30px;
 }
 
-#toggles, .toggles-wrap {
+#toggles {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#tema, #idioma{
+.toggles-wrap {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#idioma{
     width: 30px;
     height: 30px;
-    border-radius: 50px;
+    border-radius: 30px;
+    appearance: none;
     background: var(--andromeda-light);
+}
+#idioma:checked{
+    background: #eee;
+    box-shadow: inset 0 1px 15px rgba(0,0,0,0.1),
+    inset 0 1px 2px rgba(0,0,0,0.1),
+    inset 0 -1px 1px rgba(0,0,0,0.1);
 }
 
 
@@ -117,7 +130,7 @@ nav a {
         display: flex;
         flex-direction: column;
         position: absolute; 
-        left: calc(50% - 15px);
+        left: calc(50% - 30px);
         top: 400px;
         z-index: 200;
         background: none;
