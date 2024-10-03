@@ -14,4 +14,4 @@ A versão antiga do portfólio foi desenvolvida utilizando as seguintes tecnolog
 - Font Awesome: Ícones escaláveis para melhorar a visualização.
 - Devicons: Ícones para representar habilidades e ferramentas de desenvolvimento.
 
-  ![gif]()
+  ![gif](portfolio-ezgif.gif)
